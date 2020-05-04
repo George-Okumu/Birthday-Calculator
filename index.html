@@ -8,8 +8,8 @@
     </head>
     <body>
         <div class="container">
-            <div class="jumbotron">
-                    <h1>Birthday Magic.</h1>
+            <div class="jumbotron bg-primary">
+                    <h1 class="text-center">Birthday Magic.</h1>
                     <h1><small>100% online birthday:week,month and day calculator using Akan Method.</small></h1>
                     <h1><small>With this app,no need of mastering and ticking the calendar by a pen for remembrance.</small></h1>
             </div>
@@ -18,8 +18,9 @@
                 <p>For more information on Akan names visit <a href="https://en.wikipedia.org/wiki/Akan_names">Wikipedia.org/Akan_Names.</a></p>
             </div>
         </div>
-        <form text->
-            <h2>You are welcomed to explore the Magic with this app.</h2>
+        <div class="container">
+        <form>
+            <h2>Explore the Magic with this app.</h2>
             <div class="form-group">
                 <label for="InputYear">Year Born:</label>
                 <input type="text" id="year" placeholder="Year Born" min-length="4" max-length="4" required>
@@ -43,8 +44,9 @@
                 <label>
                     <input type="radio" name="gender" id="gender" value="female">Female
                 </label><br>
-                    <input type="submit" onclick="giveAkanName()" value="submit">
+                    <input class="bg-success" type="submit" onclick="giveAkanName()" value="submit">
             </div>
         </form>
+        </div>
     </body>
 </html>
