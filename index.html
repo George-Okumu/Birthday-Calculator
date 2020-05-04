@@ -3,8 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Birthday Calculator</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
         <div class="container">
@@ -18,7 +18,7 @@
                 <p>For more information on Akan names visit <a href="https://en.wikipedia.org/wiki/Akan_names">Wikipedia.org/Akan_Names.</a></p>
             </div>
         </div>
-        <form>
+        <form text->
             <h2>You are welcomed to explore the Magic with this app.</h2>
             <div class="form-group">
                 <label for="InputYear">Year Born:</label>
@@ -35,11 +35,14 @@
                 <input type="text" id="Day" placeholder="Enter day you were born" required>
             </div>
 
-            <div class="checkbox">
-                <label>Gender</label><br>
-                    <input type="checkbox" id="gender" value="male">Male<br>
-                    <input type="checkbox" id="gender" value="female">Female<br>
-
+            <div class="radio">
+                <p>Gender</p>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="male">Male
+                </label><br>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="female">Female
+                </label><br>
                     <input type="submit" onclick="giveAkanName()" value="submit">
             </div>
         </form>
