@@ -15,3 +15,8 @@ body{
 small{
     font-size: 20px;
 }
+.footer{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
