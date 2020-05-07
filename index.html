@@ -14,18 +14,20 @@
                     <p>With this app,no need of mastering and ticking the calendar by a pen for remembrance.</p>
             </div>
             <div class="description">
+                <p>The age of a person can be counted differently in different cultures.</p>
                 <p>This app has the functionality of calculating the day of the week one is born using the Akan Naming method.</p>
+                <p>Akan names are widely used in Ghana as their culture of naming. </p>
                 <p>For more information on Akan names visit <a href="https://en.wikipedia.org/wiki/Akan_names">Wikipedia.org/Akan_Names.</a></p>
             </div>
         </div>
         <div class="container">
         <form>
-            <small>Ever wondered the day of the week you were born on?<br>
-                Fill the form to know.
+            <small>Wondering of which day of the week you were born and your Akan name?<br>
+                Fill the form to find out.
                 </small>
             <div class="form-group">
                 <label for="InputYear">Year Born:</label>
-                <input type="text" id="year" placeholder="Year Born" min-length="4" max-length="4" required>
+                <input type="text" id="year" placeholder="Year Born" required>
             </div>
 
             <div class="form-group">
@@ -40,15 +42,13 @@
 
             <div class="radio">
                 <p>Gender</p>
-                <label>
-                    <input type="radio" name="gender" id="gender" value="male">Male
-                </label><br>
-                <label>
-                    <input type="radio" name="gender" id="gender" value="female">Female
-                </label><br>
-                    <input class="bg-primary" type="submit" onclick="giveAkanName()" value="submit">
+                <label id="gender">Gender</label><br>
+                <input type="radio" name="male" value="Male"><span>Male</span><br>
+                <input type="radio" name="female" value="Female"><span>Female</span><br>
+                    <input class="bg-primary" type="submit" onclick="giveAkanName()" value="Find out!">
             </div>
         </form>
         </div>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
