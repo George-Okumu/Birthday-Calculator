@@ -1,6 +1,7 @@
 # Author
 George Okumu
-##Project Name
+
+## Project Name
 Birthday Calculator
 
 ## Description of Project
