@@ -12,7 +12,7 @@ The project is able to collect user's birthday details and returns out the day o
 3.Bootstrap and CSS to style the page.
 
 ## Link to github-pages
- https://george-okumu.github.io/Birthday-Calculator/
+  https://george-okumu.github.io/Birthday-Calculator/
 
  ## Contribution
  1.Fork it!
