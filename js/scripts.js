@@ -9,8 +9,8 @@ function giveAkanName(){
     var cent = parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
 
     var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var maleName = ["Kwasi",,"Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
   //Validating dd and month
     if (document.getElementById("gender").checked){
@@ -25,62 +25,61 @@ function giveAkanName(){
     else if (mm < 1 || mm >12 || mm == 2 && dd > 29){
     alert("Month does not exist");
     }
-    //Accessing Arrays passing them through the else if loop
+    else if (Math.ceil(cent) == 0 && gender === "male"){
+    document.getElementById("outcome").innerHTML = 
+    alert("Kudos!You were born on a " + dayOfWeek[0] + " and your Akan name is " + male[0]);
+    }
     else if (Math.ceil(cent) == 1 && gender === "male"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[1] + " and your Akan name is " + maleName[1]);
+    alert("Kudos!You were born on a " + dayOfWeek[1] + " and your Akan name is " + male[1]);
     }
     else if (Math.ceil(cent) == 2 && gender === "male"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[2] + " and your Akan name is " + maleName[2]);
+    alert("Kudos!You were born on a " + dayOfWeek[2] + " and your Akan name is " + male[2]);
     }
     else if (Math.ceil(cent) == 3 && gender === "male"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[3] + " and your Akan name is " + maleName[3]);
+    alert("Kudos!You were born on a " + dayOfWeek[3] + " and your Akan name is " + male[3]);
     }
     else if (Math.ceil(cent) == 4 && gender === "male"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[4] + " and your Akan name is " + maleName[4]);
+    alert("Kudos!You were born on a " + dayOfWeek[4] + " and your Akan name is " + male[4]);
     }
     else if (Math.ceil(cent) == 5 && gender === "male"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[5] + " and your Akan name is " + maleName[5]);
+    alert("Kudos!You were born on a " + dayOfWeek[5] + " and your Akan name is " + male[5]);
     }
     else if (Math.ceil(cent) == 6 && gender === "male"){
-    document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[6] + " and your Akan name is " + maleName[6]);
-    }
-    else if (Math.ceil(cent) == 0 && gender === "male"){
       document.getElementById("outcome").innerHTML = 
-      alert("Kudos!You were born on a " + dayOfWeek[0] + " and your Akan name is " + maleName[0]);
+      alert("Kudos!You were born on a " + dayOfWeek[6] + " and your Akan name is " + male[6]);
       }
     else if (Math.ceil(cent) == 0 && gender === "female"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[0] + " and your Akan name is " + femaleName[0]);
+    alert("Kudos!You were born on a " + dayOfWeek[0] + " and your Akan name is " + female[0]);
     }
     else if (Math.ceil(cent) == 1 && gender === "female"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[1] + " and your Akan name is " + femaleName[1]);
+    alert("Kudos!You were born on a " + dayOfWeek[1] + " and your Akan name is " + female[1]);
     }
     else if (Math.ceil(cent) == 2 && gender === "female"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[2] + " and your Akan name is " + femaleName[2]);
+    alert("Kudos!You were born on a " + dayOfWeek[2] + " and your Akan name is " + female[2]);
     }
     else if (Math.ceil(cent) == 3 && gender === "female"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[3] + " and your Akan name is " + femaleName[3]);
+    alert("Kudos!You were born on a " + dayOfWeek[3] + " and your Akan name is " + female[3]);
     }
     else if (Math.ceil(cent) == 4 && gender === "female"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[4] + " and your Akan name is " + femaleName[4]);
+    alert("Kudos!You were born on a " + dayOfWeek[4] + " and your Akan name is " + female[4]);
     }
     else if (Math.ceil(cent) == 5 && gender === "female"){
     document.getElementById("outcome").innerHTML = 
-    alert("Kudos!You were born on a " + dayOfWeek[5] + " and your Akan name is " + femaleName[5]);
+    alert("Kudos!You were born on a " + dayOfWeek[5] + " and your Akan name is " + female[5]);
     }
     else if (Math.ceil(cent) == 6 && gender === "female"){
       document.getElementById("outcome").innerHTML = 
-      alert("Kudos!You were born on a " + dayOfWeek[6] + " and your Akan name is " + femaleName[6]);
+      alert("Kudos!You were born on a " + dayOfWeek[6] + " and your Akan name is " + female[6]);
       }
     else {
       alert("Kindly input the correct information!");
